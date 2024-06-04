@@ -20,7 +20,7 @@ def track_markup(_, videoid, user_id, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
-                user_id=config.OWNER_ID",
+                callback_data=f"forceclose {videoid}|{user_id}",
             )
         ],
     ]
